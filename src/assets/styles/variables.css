@@ -1,0 +1,297 @@
+/* ═══════════════════════════════════════════════════
+   FLOWGRID — Next-Level Futuristic Design System
+   Cyber HUD · Deep Obsidian · Neon Cyan · Luminous Mint · Glass Matrix
+   ═══════════════════════════════════════════════════ */
+
+:root,
+[data-theme='dark'] {
+  /* Core surfaces — Obsidian & Cyber Space */
+  --color-paper: #06090e;
+  --color-paper-deep: #0b111c;
+  --color-surface: #0e1626;
+  --color-surface-elevated: #141f35;
+  --color-surface-glass: rgba(14, 22, 38, 0.78);
+  --color-ink: #f8fafc;
+  --color-ink-soft: #e2e8f0;
+  --color-line: #1a2538;
+  --color-line-strong: #273854;
+  --color-line-glow: rgba(0, 245, 255, 0.22);
+  --color-muted: #94a3b8;
+  --color-muted-soft: #64748b;
+
+  /* Primary — Neon Cyber Cyan */
+  --color-primary: #00f5ff;
+  --color-primary-dark: #00c7d4;
+  --color-primary-darker: #009aa6;
+  --color-primary-light: #67f8ff;
+  --color-primary-lighter: #b3fcff;
+  --color-primary-50: rgba(0, 245, 255, 0.08);
+  --color-primary-100: rgba(0, 245, 255, 0.16);
+  --color-primary-900: #042533;
+  --color-primary-contrast: #06090e;
+
+  /* Secondary — Cyber Indigo */
+  --color-secondary: #6366f1;
+  --color-secondary-dark: #4f46e5;
+  --color-secondary-light: #818cf8;
+  --color-secondary-50: rgba(99, 102, 241, 0.12);
+
+  /* Accent — Luminous Matrix Mint */
+  --color-accent: #00ff9d;
+  --color-accent-dark: #00cc7e;
+  --color-accent-light: #5effbc;
+  --color-accent-50: rgba(0, 255, 157, 0.1);
+
+  /* Semantic */
+  --color-success: #00ff9d;
+  --color-success-light: #5effbc;
+  --color-success-50: rgba(0, 255, 157, 0.12);
+  --color-warning: #fbbf24;
+  --color-warning-light: #fcd34d;
+  --color-warning-50: rgba(251, 191, 36, 0.12);
+  --color-danger: #f43f5e;
+  --color-danger-light: #fb7185;
+  --color-danger-50: rgba(244, 63, 94, 0.12);
+  --color-info: #38bdf8;
+  --color-info-light: #7dd3fc;
+  --color-info-50: rgba(56, 189, 248, 0.12);
+
+  /* Neutral scale — Space Black to Silver */
+  --color-gray-50: #0b111c;
+  --color-gray-100: #10192a;
+  --color-gray-200: #1a2538;
+  --color-gray-300: #273854;
+  --color-gray-400: #475569;
+  --color-gray-500: #64748b;
+  --color-gray-600: #94a3b8;
+  --color-gray-700: #cbd5e1;
+  --color-gray-800: #e2e8f0;
+  --color-gray-900: #f1f5f9;
+  --color-gray-950: #f8fafc;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Cyber Glow & Gradients */
+  --color-glow-primary: rgba(0, 245, 255, 0.35);
+  --color-glow-accent: rgba(0, 255, 157, 0.3);
+  --color-glow-violet: rgba(168, 85, 247, 0.35);
+
+  --gradient-primary: linear-gradient(135deg, #00f5ff 0%, #3b82f6 50%, #8b5cf6 100%);
+  --gradient-hero: linear-gradient(160deg, #06090e 0%, #0b111c 45%, #0f192b 100%);
+  --gradient-hero-overlay: radial-gradient(circle at 60% 30%, rgba(0, 245, 255, 0.15) 0%, transparent 65%);
+  --gradient-card: linear-gradient(180deg, rgba(14, 22, 38, 0.85) 0%, rgba(10, 16, 28, 0.95) 100%);
+  --gradient-accent: linear-gradient(135deg, #00ff9d 0%, #00f5ff 100%);
+  --gradient-glow: 0 0 30px rgba(0, 245, 255, 0.15);
+
+  /* Shadows — Cybernetic Glow & Elevation */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 24px 56px rgba(0, 0, 0, 0.8);
+  --shadow-2xl: 0 32px 72px rgba(0, 0, 0, 0.9);
+  --shadow-inner: inset 0 1px 2px rgba(255, 255, 255, 0.04);
+  --shadow-primary: 0 0 20px rgba(0, 245, 255, 0.3);
+  --shadow-primary-lg: 0 0 36px rgba(0, 245, 255, 0.45);
+  --shadow-accent: 0 0 24px rgba(0, 255, 157, 0.35);
+  --focus-ring: 0 0 0 3px rgba(0, 245, 255, 0.35);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(14, 22, 38, 0.75);
+  --glass-border: rgba(0, 245, 255, 0.18);
+  --glass-blur: blur(18px);
+
+  /* Cyber Grid & Scanline */
+  --grid-line-color: rgba(0, 245, 255, 0.05);
+  --scanline-color: rgba(0, 245, 255, 0.03);
+}
+
+/* ═══════════════════════════════════════════════════
+   LIGHT MODE — Futuristic Clean Titanium & Cyber Cobalt
+   ═══════════════════════════════════════════════════ */
+[data-theme='light'] {
+  --color-paper: #f4f6fa;
+  --color-paper-deep: #e8ecf4;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-surface-glass: rgba(255, 255, 255, 0.85);
+  --color-ink: #070d18;
+  --color-ink-soft: #111a2e;
+  --color-line: #d8e0ec;
+  --color-line-strong: #bac7da;
+  --color-line-glow: rgba(37, 99, 235, 0.2);
+  --color-muted: #55657e;
+  --color-muted-soft: #708199;
+
+  /* Primary — High-Energy Cobalt */
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e40af;
+  --color-primary-darker: #172554;
+  --color-primary-light: #3b82f6;
+  --color-primary-lighter: #93c5fd;
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-900: #1e3a8a;
+  --color-primary-contrast: #ffffff;
+
+  /* Secondary — Deep Marine */
+  --color-secondary: #0f766e;
+  --color-secondary-dark: #115e59;
+  --color-secondary-light: #14b8a6;
+  --color-secondary-50: #f0fdfa;
+
+  /* Accent — Emerald Signal */
+  --color-accent: #059669;
+  --color-accent-dark: #047857;
+  --color-accent-light: #34d399;
+  --color-accent-50: #ecfdf5;
+
+  /* Semantic */
+  --color-success: #059669;
+  --color-success-light: #34d399;
+  --color-success-50: #ecfdf5;
+  --color-warning: #d97706;
+  --color-warning-light: #fbbf24;
+  --color-warning-50: #fffbeb;
+  --color-danger: #dc2626;
+  --color-danger-light: #f87171;
+  --color-danger-50: #fef2f2;
+  --color-info: #0284c7;
+  --color-info-light: #38bdf8;
+  --color-info-50: #f0f9ff;
+
+  /* Neutral scale */
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-gray-950: #020617;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gradients */
+  --color-glow-primary: rgba(37, 99, 235, 0.2);
+  --color-glow-accent: rgba(5, 150, 105, 0.18);
+  --color-glow-violet: rgba(147, 51, 234, 0.2);
+
+  --gradient-primary: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  --gradient-hero: linear-gradient(160deg, #f4f6fa 0%, #e8ecf4 55%, #dbe3f0 100%);
+  --gradient-hero-overlay: radial-gradient(circle at 60% 30%, rgba(37, 99, 235, 0.08) 0%, transparent 65%);
+  --gradient-card: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  --gradient-accent: linear-gradient(135deg, #059669 0%, #1d4ed8 100%);
+  --gradient-glow: 0 4px 20px rgba(37, 99, 235, 0.12);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 6px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.1);
+  --shadow-xl: 0 24px 56px rgba(15, 23, 42, 0.14);
+  --shadow-2xl: 0 32px 72px rgba(15, 23, 42, 0.18);
+  --shadow-inner: inset 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-primary: 0 4px 14px rgba(29, 78, 216, 0.22);
+  --shadow-primary-lg: 0 8px 26px rgba(29, 78, 216, 0.32);
+  --shadow-accent: 0 4px 14px rgba(5, 150, 105, 0.2);
+  --focus-ring: 0 0 0 3px rgba(29, 78, 216, 0.25);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(216, 224, 236, 0.8);
+  --glass-blur: blur(18px);
+
+  /* Grid lines */
+  --grid-line-color: rgba(15, 23, 42, 0.04);
+  --scanline-color: rgba(15, 23, 42, 0.02);
+}
+
+/* ═══════════════════════════════════════════════════
+   SHARED TYPOGRAPHY, SPACING & SYSTEM METRICS
+   ═══════════════════════════════════════════════════ */
+:root {
+  /* Typography */
+  --font-family-base: 'Instrument Sans', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-family-display: 'Bricolage Grotesque', 'Instrument Sans', ui-sans-serif, sans-serif;
+
+  --font-size-xs: 0.75rem;      /* 12 */
+  --font-size-sm: 0.8125rem;    /* 13 */
+  --font-size-base: 0.9375rem;  /* 15 */
+  --font-size-lg: 1.0625rem;    /* 17 */
+  --font-size-xl: 1.25rem;      /* 20 */
+  --font-size-2xl: 1.5rem;      /* 24 */
+  --font-size-3xl: 1.875rem;    /* 30 */
+  --font-size-4xl: 2.25rem;     /* 36 */
+  --font-size-5xl: 3rem;        /* 48 */
+  --font-size-6xl: 3.75rem;     /* 60 */
+  --font-size-7xl: 4.75rem;     /* 76 */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-snug: -0.015em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.01em;
+  --letter-spacing-wider: 0.04em;
+  --letter-spacing-widest: 0.08em;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  --spacing-5xl: 8rem;
+
+  /* Engineered Futuristic Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-2xl: 18px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+
+  /* Futuristic Transitions */
+  --transition-fast: 140ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 450ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1100;
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --sidebar-width: 272px;
+  --navbar-height: 74px;
+}

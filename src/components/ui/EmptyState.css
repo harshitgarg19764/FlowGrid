@@ -1,0 +1,76 @@
+/* ═══════════════════════════════════
+   EMPTY STATE — a quiet panel, not an illustration
+   ═══════════════════════════════════ */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-line-strong);
+  border-radius: var(--radius-xl);
+  animation: fadeIn 0.3s ease-out both;
+}
+
+.empty-state-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.25rem;
+  color: var(--color-ink);
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  background: #fafbf7;
+}
+
+.empty-state-mark::before,
+.empty-state-mark::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-color: var(--color-primary);
+  border-style: solid;
+}
+
+.empty-state-mark::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+
+.empty-state-mark::after {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+.empty-state-title {
+  margin: 0 0 0.5rem;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.empty-state-description {
+  max-width: 42ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.55;
+}
+
+.empty-state-action {
+  margin-top: 1.5rem;
+}
+
+.empty-state-action .btn {
+  margin: 0 auto;
+}

@@ -1,0 +1,96 @@
+/* ─── Wrapper ──────────────────────────────────────────────────── */
+
+.input-wrapper {
+  margin-bottom: var(--space-4);
+}
+
+/* ─── Label ────────────────────────────────────────────────────── */
+
+.input-label {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.input-label__required {
+  color: var(--color-danger);
+}
+
+/* ─── Input / Textarea / Select ────────────────────────────────── */
+
+.input-control {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-size: var(--fs-base);
+  font-family: inherit;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-control::placeholder {
+  color: var(--color-text-secondary);
+}
+
+/* Focus */
+.input-control:focus {
+  border-color: var(--color-border-focus, var(--color-primary));
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Error state */
+.input-control--error {
+  border-color: var(--color-danger);
+}
+
+.input-control--error:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+/* Disabled */
+.input-control--disabled {
+  background-color: var(--color-gray-100);
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+/* ─── Textarea specifics ──────────────────────────────────────── */
+
+textarea.input-control {
+  resize: vertical;
+  min-height: 4rem;
+}
+
+/* ─── Select specifics ─────────────────────────────────────────── */
+
+select.input-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8.825a.5.5 0 0 1-.354-.146l-4-4a.5.5 0 1 1 .708-.708L6 7.618l3.646-3.647a.5.5 0 1 1 .708.708l-4 4A.5.5 0 0 1 6 8.825Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+}
+
+/* ─── Error Message ────────────────────────────────────────────── */
+
+.input-error {
+  font-size: var(--fs-xs);
+  color: var(--color-danger);
+  margin: var(--space-1) 0 0;
+}
+
+/* ─── Help Text ────────────────────────────────────────────────── */
+
+.input-help {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  margin: var(--space-1) 0 0;
+}
